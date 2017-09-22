@@ -7,7 +7,7 @@
 	<artifactId>AlmaMater</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>AlmaMater from Rosalind</name>
+	<name>AlmaMater from Iona</name>
 
 	<properties>
 		<springframework.version>4.3.9.RELEASE</springframework.version>
@@ -100,9 +100,9 @@
 		</dependency>
 		
 		<dependency>
-    		<groupId>postgresql</groupId>
+    		<groupId>org.postgresql</groupId>
     		<artifactId>postgresql</artifactId>
-    		<version>9.3-1102.jdbc41</version>
+    		<version>9.3-1102-jdbc41</version>
 		</dependency>
 
  		<dependency>
