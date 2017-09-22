@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import com.iona.framework.base.AppConfig;
 
 @Component
-public class RosalindRdbmsDaoImpl implements RosalindRdbmsDao {
+public class IonaRdbmsDaoImpl implements IonaRdbmsDao {
 	private JdbcTemplate jdbcTemplate;
 	
 	@Autowired
@@ -21,7 +21,7 @@ public class RosalindRdbmsDaoImpl implements RosalindRdbmsDao {
 	
 	@PostConstruct
 	void init(){
-		System.out.println("init of RosalindRdbmsDaoImpl");
+		System.out.println("init of IonaRdbmsDaoImpl");
 		PGPoolingDataSource dataSource = new PGPoolingDataSource();
 		//dataSource.setDriverClassName("org.postgresql.Driver");
 		

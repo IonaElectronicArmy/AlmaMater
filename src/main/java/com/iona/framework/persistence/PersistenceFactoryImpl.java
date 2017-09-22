@@ -3,27 +3,27 @@ package com.iona.framework.persistence;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.iona.framework.persistence.nosql.RosalindNoSqlDao;
-import com.iona.framework.persistence.nosql.RosalindNoSqlDaoImpl;
-import com.iona.framework.persistence.rdbms.RosalindRdbmsDao;
-import com.iona.framework.persistence.rdbms.RosalindRdbmsDaoImpl;
+import com.iona.framework.persistence.nosql.IonaNoSqlDao;
+import com.iona.framework.persistence.nosql.IonaNoSqlDaoImpl;
+import com.iona.framework.persistence.rdbms.IonaRdbmsDao;
+import com.iona.framework.persistence.rdbms.IonaRdbmsDaoImpl;
 
 @Component
 public class PersistenceFactoryImpl implements PersistenceFactory{
 	
 	@Autowired
-	private RosalindNoSqlDaoImpl rosalindNoSqlDao;
+	private IonaNoSqlDaoImpl rosalindNoSqlDao;
 	
 	@Autowired
-	private RosalindRdbmsDaoImpl rosalindDaoImpl;
+	private IonaRdbmsDaoImpl rosalindDaoImpl;
 
 	@Override
-	public RosalindNoSqlDao getNoSqlDao() {
+	public IonaNoSqlDao getNoSqlDao() {
 		return rosalindNoSqlDao;
 	}
 
 	@Override
-	public RosalindRdbmsDao getRdbmsDao() {
+	public IonaRdbmsDao getRdbmsDao() {
 		return rosalindDaoImpl;
 	}	
 	

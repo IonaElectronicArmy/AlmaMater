@@ -1,10 +1,10 @@
 package com.iona.framework.persistence;
 
-import com.iona.framework.persistence.nosql.RosalindNoSqlDao;
-import com.iona.framework.persistence.rdbms.RosalindRdbmsDao;
+import com.iona.framework.persistence.nosql.IonaNoSqlDao;
+import com.iona.framework.persistence.rdbms.IonaRdbmsDao;
 
 public interface PersistenceFactory {
 	
-	RosalindNoSqlDao getNoSqlDao();
-	RosalindRdbmsDao getRdbmsDao();
+	IonaNoSqlDao getNoSqlDao();
+	IonaRdbmsDao getRdbmsDao();
 }

@@ -20,7 +20,7 @@ import com.mongodb.ServerAddress;
 import com.mongodb.WriteConcern;
 
 @Component
-public class RosalindNoSqlDaoImpl implements RosalindNoSqlDao {
+public class IonaNoSqlDaoImpl implements IonaNoSqlDao {
 
 	@Autowired
 	private AppConfig appConfig;

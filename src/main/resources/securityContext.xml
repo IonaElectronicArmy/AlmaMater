@@ -20,7 +20,7 @@
               
     </http>
     
-    <beans:bean id="jwtAuthenticationFilter" class="com.rosalind.framework.auth.JwtAuthenticationFilter">
+    <beans:bean id="jwtAuthenticationFilter" class="com.iona.framework.auth.JwtAuthenticationFilter">
         <beans:property name="authenticationManager" ref="authenticationManager" />
         <beans:property name="authenticationSuccessHandler" ref="jwtAuthenticationSuccessHandler" />
     </beans:bean>

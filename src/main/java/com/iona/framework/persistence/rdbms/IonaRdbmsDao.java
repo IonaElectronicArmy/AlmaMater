@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.jdbc.core.RowMapper;
 
-public interface RosalindRdbmsDao{
+public interface IonaRdbmsDao{
 	public void saveOrUpdate(Object contact);
 
 	public void delete(int contactId) ;
